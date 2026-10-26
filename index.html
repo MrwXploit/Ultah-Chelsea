@@ -1,0 +1,191 @@
+<!doctype html>
+<html lang="id"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Peony Planet 🌷 Happy Birthday!</title>
+<meta name="description" content="Planet kecil penuh peony, dibuat khusus untuk hari spesialmu.">
+<meta name="theme-color" content="#FFF6D9">
+<meta property="og:type" content="website"><meta property="og:title" content="Peony Planet 🌷 Ada kejutan untukmu!"><meta property="og:description" content="Planet kecil penuh peony, dibuat khusus untuk hari spesialmu.">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns=%27http://www.w3.org/2000/svg%27 viewBox=%270 0 100 100%27%3E%3Ctext y=%27.9em%27 font-size=%2790%27%3E🌷%3C/text%3E%3C/svg%3E">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@500;600;700&family=Nunito:wght@500;700&family=Caveat:wght@600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/style.css"><link rel="stylesheet" href="css/cute.css"></head><body><div class="bgf" id="bgf" aria-hidden="true"></div>
+<svg width="0" height="0" style="position:absolute" aria-hidden="true"><defs>
+<symbol id="peony" viewBox="-50 -50 100 100"><g fill="#F48F9C" stroke="#34334B" stroke-width="2.5"><circle cy="-27" r="19"/><circle cy="-27" r="19" transform="rotate(60)"/><circle cy="-27" r="19" transform="rotate(120)"/><circle cy="-27" r="19" transform="rotate(180)"/><circle cy="-27" r="19" transform="rotate(240)"/><circle cy="-27" r="19" transform="rotate(300)"/></g><circle r="13" fill="#FFE68A" stroke="#34334B" stroke-width="2.5"/><g fill="#34334B"><circle cx="-5" cy="-3" r="2"/><circle cx="5" cy="-3" r="2"/></g><circle cx="-9" cy="2" r="3" fill="#F48F9C" opacity=".75"/><circle cx="9" cy="2" r="3" fill="#F48F9C" opacity=".75"/><path d="M-3 1q3 3.5 6 0" fill="none" stroke="#34334B" stroke-width="1.8" stroke-linecap="round"/></symbol>
+<symbol id="star" viewBox="-50 -50 100 100"><path d="M0-42 12-14 42-12 19 8 27 38 0 22-27 38-19 8-42-12-12-14Z" fill="#FFE68A" stroke="#34334B" stroke-width="3" stroke-linejoin="round"/><circle cx="-8" cy="0" r="2.6" fill="#34334B"/><circle cx="8" cy="0" r="2.6" fill="#34334B"/><path d="M-6 9q6 5 12 0" fill="none" stroke="#34334B" stroke-width="2.5" stroke-linecap="round"/></symbol>
+<symbol id="planet" viewBox="0 0 300 300"><ellipse cx="150" cy="172" rx="142" ry="32" fill="none" stroke="#DCD2FF" stroke-width="10" transform="rotate(-14 150 172)"/><circle cx="150" cy="150" r="104" fill="#D8EDDB" stroke="#34334B" stroke-width="4"/><use href="#peony" x="78" y="64" width="66" height="66"/><use href="#peony" x="156" y="138" width="80" height="80"/><use href="#peony" x="72" y="168" width="50" height="50"/><path d="M186 66q-16-26 12-28 14-16 34 2 22 4 8 26z" fill="#fff" stroke="#34334B" stroke-width="3"/></symbol>
+</defs></svg>
+
+<nav id="nav" hidden aria-label="Pindah lokasi"><button data-go="map">🌷 Peta</button><button data-go="vault">📸 Vault</button><button data-go="machine">🎰 Pujian</button><button data-go="clouds">☁️ Wishes</button><button data-go="cake">🎂 Kue</button><button data-go="match">🃏 Match</button><button data-go="letter">💌 Surat</button><button data-go="report">🏆 Report</button><button data-go="booth">📷 Booth</button></nav>
+<main class="wrap">
+
+<section class="view intro" id="intro">
+ <div class="intro-text"><span class="tag">📢 BREAKING NEWS DARI PLANET PEONY</span>
+  <h1>APAKAHH INIII SAATNYA SI PENDEKK NAN MENGGEMASKAN INI ULANGG TAHUNNNN??!!</h1>
+  <p>Waduuhhhhh! Aku Wira sebagai CEO dari Tim Peony Planet sampai lupa nafass karena sangking lamanya nahan nafas di luar planet dan juga sangking hebohnya nyiapin hari spesial kamu. Kucing penjaga udah guling-guling dari tadi. Untung kamu datang! 🐱💕</p>
+  <button class="btn" id="start">AKU DATANG! 🏃‍♀️💨</button>
+  <ul class="status"><li>⭐ Bintang ulang tahun terdeteksi: 100%.</li><li>🎯 Misi hari ini: bikin kamu senyum-senyum.</li><li>🌷 Peony: sudah siap baper.</li><li>🐱 Kucing: sudah siap dielus.</li></ul></div>
+ <div class="art"><svg class="planet" id="planet-art" viewBox="0 0 300 300" role="img" aria-label="Planet mungil berisi peony, awan, dan bintang"><use href="#planet"/><use class="blink" href="#star" x="8" y="30" width="46" height="46"/><use href="#star" x="240" y="196" width="40" height="40"/></svg><img class="kucing kucing-intro" src="assets/gif/cat-bounce.gif" alt="Kucing lucu yang melompat-lompat" width="120" height="120" onerror="this.remove()"></div>
+</section>
+
+<section class="view" id="map" hidden>
+ <h2>Peony Planet Map</h2><p class="lead">Pilih petualanganmu. Boleh ke mana saja, kapan saja.</p>
+ <div class="counter" id="counter"><p class="fr">Sudah bersama selama</p><div id="cnt" role="timer"></div><p class="small" id="cnt-next"></p></div>
+ <div class="map">
+  <button class="loc la" data-go="vault" style="--c:var(--lilac)"><span class="ico">📸</span><b>The Memory Vault</b><span>40 kartu foto kenangan.</span><span class="tick">✓ sudah dikunjungi</span></button>
+  <button class="loc loc-b" data-go="machine" style="--c:var(--butter)"><span class="ico">🎰</span><b>Compliment-O-Matic</b><span>Mesin pujian, tinggal pencet.</span><span class="tick">✓ sudah dikunjungi</span></button>
+  <div class="planet-wrap"><svg class="planet" viewBox="0 0 300 300" aria-hidden="true"><use href="#planet"/><use class="blink" href="#star" x="8" y="30" width="46" height="46"/><use href="#star" x="240" y="196" width="40" height="40"/></svg></div>
+  <button class="loc lc" data-go="clouds" style="--c:var(--mint)"><span class="ico">☁️</span><b>Cloud of Wishes</b><span>Pesan kecil sesuai suasana hati.</span><span class="tick">✓ sudah dikunjungi</span></button>
+  <button class="loc ld" data-go="cake" style="--c:var(--coral)"><span class="ico">🎂</span><b>The Cake Lab</b><span>Rakit kue ulang tahunmu.</span><span class="tick">✓ sudah dikunjungi</span></button>
+ </div>
+ <div class="row crow"><button class="btn alt" data-go="match">🃏 Memory Match</button><button class="btn lil" data-go="letter">💌 Surat Rahasia</button><button class="btn lil" data-go="report">Lihat birthday report</button></div>
+</section>
+
+<section class="view" id="vault" hidden>
+ <h2>The Memory Vault</h2><p class="lead">40 little pieces of you. Tempel, putar, lempar, dan acak sesukamu.</p>
+ <div class="tabs" id="tabs" role="tablist"></div>
+ <p id="pack-desc" class="lead"></p>
+ <div class="row"><button class="btn alt" id="shuffle">🎲 SHUFFLE MY MEMORIES</button><button class="btn lil" id="surprise">🎁 KARTU KEJUTAN</button><button class="chip" id="mode-board" aria-pressed="true">🧷 Scrapbook</button><button class="chip" id="mode-deck" aria-pressed="false">🃏 Tumpukan</button></div>
+ <p class="small" id="vault-hint"></p>
+ <div class="board" id="board"></div>
+ <div class="deck" id="deck" hidden><div class="deck-stage" id="deck-stage"></div>
+  <div class="row crow"><button class="btn lil" id="d-prev">← Sebelumnya</button><span class="fr" id="d-count"></span><button class="btn" id="d-next">Berikutnya →</button></div></div>
+</section>
+
+<section class="view" id="machine" hidden>
+ <h2>Compliment-O-Matic</h2><p class="lead">Mesin pujian paling bias sedunia: semua hasilnya selalu berpihak sama kamu. 🐱💗</p>
+ <div class="compliment-hub">
+  <div class="machine" id="machine-box">
+   <div class="machine-topline"><span class="machine-brand">🌷 PEONY LAB™</span><span class="machine-status"><i></i> LOVE MODE: ON</span></div>
+   <div class="machine-mascot"><span class="mascot-spark">✦</span><img class="kucing" src="assets/gif/wish-cuddle.gif" alt="Kucing kecil yang sedang jatuh cinta" width="110" height="110" onerror="this.remove()"><span class="mascot-heart">💖</span></div>
+   <div class="machine-prompt">KLIK TOMBOLNYA, DAPAT PELUKAN VERBAL ✨</div>
+   <div class="compliment-card" id="compliment-card">
+    <div class="compliment-icon" id="compliment-emoji" aria-hidden="true">💌</div>
+    <div class="compliment-copy"><p class="compliment-kicker" id="compliment-kicker">PESAN SPESIAL BUAT KAMU</p><div class="screen" id="screen" aria-live="polite" role="status">Halo, Manusia Pendek yang menggemaskan!! Pencet tombol pink itu ya Sayang buat membuka satu pujian rahasia. 🎀</div>
+     <div class="compliment-meta"><span id="compliment-type">💗 siap memuji</span><span id="compliment-number">belum ada kartu dibuka</span></div>
+    </div>
+   </div>
+   <div class="love-meter-label"><span>TINGKAT GEMAS</span><b id="love-meter-value">??%</b></div><div class="love-meter" role="meter" aria-label="Tingkat gemas" aria-valuemin="0" aria-valuemax="100" aria-valuenow="0"><span id="love-meter-fill"></span></div>
+   <p class="machine-note" id="machine-note" aria-live="polite">🐾 Sertifikat pujian disahkan oleh Kucing HR.</p>
+   <div class="machine-actions"><button class="btn" id="tell">GAS POL PUJIANNYA! 🎀</button><button class="btn alt" id="save-compliment" disabled>♡ SIMPAN FAVORIT</button><button class="chip" id="copy-compliment" disabled>📋 Salin</button></div>
+  </div>
+  <aside class="compliment-side">
+   <div class="compliment-side-sticker">🎀</div><h3>Hari ini mau dipuji soal apa?</h3><p>Pilih rasa pujiannya. Mesin tetap random, tapi kadar gemasnya tidak bertanggung jawab.</p>
+   <div class="compliment-moods" id="compliment-moods" aria-label="Kategori pujian">
+    <button class="chip" data-compliment="all" aria-pressed="true">🎁 Apa aja</button><button class="chip" data-compliment="cute" aria-pressed="false">🐰 Gemas</button><button class="chip" data-compliment="love" aria-pressed="false">💌 Bucin</button><button class="chip" data-compliment="proud" aria-pressed="false">👑 Bangga</button><button class="chip" data-compliment="comfort" aria-pressed="false">🧸 Peluk dulu</button><button class="chip" data-compliment="silly" aria-pressed="false">🍓 Absurd</button>
+   </div>
+   <div class="favorite-head"><h3>💖 Jar favorit</h3><span id="favorite-count">0 kartu</span></div>
+   <p class="small">Simpan pujian yang bikin pipimu ikut merah. Klik kartu untuk membacanya lagi.</p>
+   <div id="compliment-favorites" class="compliment-favorites"><p class="favorite-empty">Masih kosong! Cari pujian yang bikin kamu bilang “ih apasihhh” dulu. 🥹</p></div>
+   <button class="chip clear-favorites" id="clear-favorites" hidden>🧹 Kosongkan jar</button>
+  </aside>
+ </div>
+</section>
+
+<section class="view" id="clouds" hidden>
+ <h2>Cloud of Wishes</h2><p class="lead">Pilih suasana hatimu.</p>
+ <div class="cloud-grid" id="cloud-grid"></div>
+ <div class="wish" id="wish" hidden><img id="wish-gif" class="kucing" alt="" width="150" height="150" hidden><h3 id="wish-title"></h3><p id="wish-text" aria-live="polite"></p><button class="btn lil" id="wish-again">PILIH AWAN LAIN</button></div>
+</section>
+
+<section class="view" id="cake" hidden>
+ <h2>The Cake Lab</h2><p class="lead">Rakit kue ulang tahunmu sesukanya, atau biarkan dadu yang memilih.</p>
+ <div class="cake-wrap">
+  <div class="cake-stage"><svg id="cake-art" viewBox="0 0 300 290" role="img" aria-label="Kue ulang tahun hasil rakitanmu"></svg></div>
+  <div class="opts"><div id="cake-chips"></div>
+   <label>Tulisan di kue<input type="text" id="cake-text" value="Happy Birthday!" maxlength="18"></label>
+   <div class="row"><button class="btn lil" id="dice">🎲 ACAK KUE</button><button class="btn" id="ready">OKAY, CAKE'S READY!</button></div>
+   <div id="done" hidden>
+    <h3>Birthday girl has officially entered her next level! 🎉</h3>
+    <p>Semoga tahun ini punya lebih banyak hal yang bikin kamu ketawa, lebih banyak mimpi yang tercapai, dan lebih banyak alasan buat bangga sama diri sendiri.</p>
+    <div class="wish-gate" id="wish-gate">
+     <div class="cake-step"><span class="cake-step-no">01</span><div><b>RAHASIA KECILMU 🤫</b><p>Tulis satu harapan yang ingin kamu titipkan ke semesta. Ssst... jangan kasih tahu siapa-siapa dulu, ya!</p></div></div>
+     <label class="wish-label" for="birthday-wish">Harapan ulang tahunmu<textarea id="birthday-wish" rows="4" maxlength="1000" placeholder="Aku berharap tahun ini..." required></textarea></label>
+     <div class="wish-foot"><span id="wish-count">0/1000 karakter</span><span>💗 hanya untukmu</span></div>
+     <p class="small" id="wish-save-note" role="status" aria-live="polite">Setelah kamu menekan tombol, harapan akan otomatis diunduh sebagai file catatan (.txt).</p>
+     <button class="btn wish-save" id="save-wish">💌 SIMPAN HARAPAN & BUKA MISI TIUP</button>
+    </div>
+    <div class="blow-panel" id="blow-panel" hidden>
+     <div class="cake-step"><span class="cake-step-no">02</span><div><b>MISI: PADAMKAN LILIN 🌬️</b><p>Dekatkan mulut ke mikrofon, lalu tiup seperti meniup lilin sungguhan selama setengah detik.</p></div></div>
+     <div class="mic-toy" aria-hidden="true"><span>🎂</span><span class="mic-wind">〰️💨</span><span>🎙️</span></div>
+     <div class="blow-meter" id="blow-meter" role="meter" aria-label="Kekuatan tiupan" aria-valuemin="0" aria-valuemax="100" aria-valuenow="0"><span id="blow-meter-fill"></span></div>
+     <p class="mic-status" id="mic-status" role="status" aria-live="polite">Harapan tersimpan! Aktifkan mikrofon, lalu tiup ke arahnya. 🌷</p>
+     <p class="small mic-privacy">🔒 Suara hanya dianalisis di perangkat ini, tidak direkam atau diunggah. Mikrofon ditutup otomatis setelah lilin padam.</p>
+     <div class="row blow-actions"><button class="btn" id="mic-start">🎙️ AKTIFKAN MIKROFON</button><button class="btn alt" id="blow">💨 TIUP TANPA MIKROFON</button><button class="chip" id="mic-stop" hidden>JEDA MIKROFON</button></div>
+    </div>
+    <div class="wish-complete" id="wish-complete" hidden><div class="wish-complete-emoji">🎉🕯️💗</div><h3>WISH SAVED, CANDLES BLOWN!</h3><p>Harapanmu sudah diamankan dalam file catatan. Semoga hal-hal baik pelan-pelan menemukan jalan ke kamu. Jangan lupa, kamu juga boleh membantu harapanmu tumbuh. 🌱</p><span class="wish-stamp">✨ MISSION COMPLETED ✨</span></div>
+    <div class="row cake-footer"><button class="btn alt" id="redo">DESAIN ULANG KUE</button><button class="btn lil" data-go="report">LIHAT REPORT</button></div>
+   </div>
+  </div>
+ </div>
+</section>
+
+<section class="view" id="report" hidden>
+ <div class="report"><img class="kucing" src="assets/gif/cat-dance.gif" alt="Kucing yang sedang berjoget" width="120" height="120" onerror="this.remove()">
+  <h2>YOUR OFFICIAL BIRTHDAY REPORT</h2>
+  <dl><div><dt>Main Character Energy</dt><dd>100/10</dd></div><div><dt>Cuteness Level</dt><dd>Beyond Measurement</dd></div><div><dt>Reasons to Be Loved</dt><dd>Too Many to Count</dd></div><div><dt>Birthday Cake Eligibility</dt><dd>APPROVED</dd></div><div><dt>Planetary Importance</dt><dd>Extremely High</dd></div></dl>
+  <p class="small">Angka-angka ini hanya candaan visual, bukan penilaian sungguhan.</p>
+  <p class="closing">Happy birthday, manusia favoritku! Semoga kamu selalu punya ruang buat tumbuh, tertawa, istirahat, dan mengejar semua yang kamu impikan. Kamu pantas mendapatkan hal-hal baik, bukan cuma hari ini, tapi juga di hari-hari biasa.</p>
+  <div class="row"><button class="btn" data-go="map">BALIK KE PLANET</button><button class="btn alt" data-go="vault">AKU MAU LIHAT FOTO LAGI</button><button class="btn lil" data-go="booth">BUKA PHOTOBOOTH 📸</button><button class="btn" data-go="letter">BUKA SURAT 💌</button></div></div>
+</section>
+
+<section class="view" id="booth" hidden>
+ <h2>Peony Photobooth</h2><p class="lead">Jepret atau pilih foto, hias frame-nya, pilih efek, lalu simpan.</p>
+ <div class="pb">
+  <div class="pb-stage"><canvas id="pb-canvas" role="img" aria-label="Pratinjau photobooth"></canvas><p class="small" id="pb-msg" aria-live="polite"></p></div>
+  <div class="pb-ctl">
+   <h3>📐 Gaya foto</h3><p class="small">Pilih bentuk kenanganmu. Ketuk slot di pratinjau untuk menentukan tempat foto berikutnya.</p><div class="row" id="pb-layouts"></div>
+   <h3>Foto</h3>
+   <div class="row"><button class="btn lil" id="cam-on">📷 Kamera</button><label class="btn alt" for="up">⬆ Upload</label><input id="up" type="file" accept="image/*" multiple hidden><button class="btn alt" id="pick-btn">Dari Memory Vault</button></div>
+   <div id="cam-box" hidden><div class="pb-cam"><video id="cam" autoplay playsinline muted></video><b id="count" aria-live="assertive"></b></div>
+    <label><input type="checkbox" id="mirror" checked> Mirror kamera</label>
+    <div class="row"><button class="btn" id="snap">JEPRET</button><button class="btn alt" id="auto">AUTO SEMUA SLOT</button><button class="chip" id="cam-off">Tutup kamera</button></div></div>
+   <div class="pb-pick" id="pick" hidden></div>
+   <p class="fr">Tempat foto</p><div class="row" id="pb-slots"></div><button class="chip" id="clear">Kosongkan semua</button>
+   <h3>🖼️ Frame & warna</h3>
+   <label>Gaya bingkai<select data-s="frame"><option value="polaroid">Polaroid klasik</option><option value="classic">Gummy outline</option><option value="double">Double border</option><option value="film">Film camera</option><option value="washi">Washi tape</option><option value="sticker">Sticker party</option><option value="doodle">Doodle cutie</option></select></label>
+   <div class="row" id="pb-sw"><input type="color" id="pb-color" value="#F48F9C" data-s="color" aria-label="Warna frame bebas"></div>
+   <label>Pola latar<select data-s="pat"><option value="peony">Peony</option><option value="dots">Polkadot</option><option value="stars">Bintang</option><option value="stripes">Garis</option><option value="hearts">Hati</option><option value="checker">Checker</option><option value="confetti">Confetti</option><option value="bows">Pita-pita</option><option value="none">Polos</option></select></label>
+   <label>Judul<input type="text" data-s="title" value="PEONY PLANET" maxlength="24"></label>
+   <label>Caption<input type="text" data-s="cap" value="Happy Birthday!" maxlength="40"></label>
+   <label>Stiker sudut<select data-s="stk"><option>🌷</option><option>🌸</option><option>⭐</option><option>💖</option><option>🎂</option><option>🐱</option><option>🍓</option><option>🎀</option><option>🧸</option><option>🍒</option><option>🦋</option><option>🫧</option><option>🩷</option><option value="-">Tanpa stiker</option></select></label>
+   <label>Sudut foto <input type="range" min="0" max="60" value="24" data-s="rad"></label>
+   <h3>🪄 Filter ajaib</h3><p class="small">Efek ini diterapkan ke foto hasil unduhan juga, bukan hanya pratinjau.</p><div class="row" id="pb-fx"></div>
+   <label><input type="checkbox" data-s="vig" checked> Vignette</label><label><input type="checkbox" data-s="grain"> Grain film</label><label><input type="checkbox" data-s="spk"> Sparkle</label>
+   <p><button class="btn" id="dl">⬇ SIMPAN FOTO (PNG)</button></p>
+  </div>
+ </div>
+</section>
+
+<section class="view" id="match" hidden>
+ <h2>Memory Match</h2><p class="lead">Cari pasangan fotonya. Setiap pasangan yang cocok membuka satu kenangan.</p>
+ <div class="row"><button class="chip" data-lv="6" aria-pressed="false">Mudah</button><button class="chip" data-lv="8" aria-pressed="true">Sedang</button><button class="chip" data-lv="10" aria-pressed="false">Susah</button><button class="btn alt" id="m-new">MAIN ULANG</button></div>
+ <p class="fr" id="m-stat" aria-live="polite"></p>
+ <div class="mgrid" id="mgrid"></div>
+ <div class="mnote" id="m-note" aria-live="polite" hidden></div>
+ <div class="wish" id="m-win" hidden><img class="kucing" src="assets/gif/wish-proud.gif" alt="" width="150" height="141" onerror="this.remove()"><h3>Semua pasangan ketemu!</h3><p id="m-win-t"></p><button class="btn lil" id="m-again">MAIN LAGI</button></div>
+</section>
+
+<section class="view" id="letter" hidden>
+ <h2>Surat Rahasia</h2><p class="lead">Ada surat yang menunggu untukmu.</p>
+ <div class="lock" id="l-lock" hidden><label for="l-code">Kode rahasia</label><input type="text" id="l-code" autocomplete="off"><p class="small" id="l-hint"></p><p class="small" id="l-err" aria-live="polite"></p><button class="btn" id="l-open">BUKA</button></div>
+ <div class="env-wrap" id="env-wrap"><button class="env" id="env" aria-label="Buka amplop"><svg class="flap" viewBox="0 0 260 100" aria-hidden="true"><polygon points="3,3 257,3 130,97" fill="#F8A9B3" stroke="#34334B" stroke-width="4" stroke-linejoin="round"/></svg><span class="seal" aria-hidden="true">💌</span></button>
+  <article class="paper" id="paper" hidden><div id="l-text" aria-hidden="true"></div><p class="sr" id="l-full"></p><p class="sign" id="l-sign" aria-hidden="true"></p>
+   <div class="voice-note" id="voice-note" hidden>
+    <div class="voice-note-top"><span class="voice-note-icon">🎙️</span><span class="voice-note-label">PESAN SUARA DARI AKU</span><span class="voice-note-heart">💗</span></div>
+    <h3>Ada sesuatu yang pengin aku ucapin langsung...</h3>
+    <p>Surat ini memang bisa kamu baca, tapi ada bagian yang lebih spesial kalau kamu dengar dari suaraku sendiri. Pakai headphone biar makin terasa dekat, karena ini dariku dimasalalu bulan juni 2024. 🥹</p>
+    <audio id="letter-audio" controls preload="metadata" aria-label="Pesan suara spesial dari pengirim surat"><source src="assets/audio/voice-note.mp3" type="audio/mpeg">Browser kamu belum mendukung pemutar audio.</audio>
+    <p class="voice-note-help" id="voice-note-help" role="status" aria-live="polite">🎧 Tekan play, lalu dengarkan sampai selesai ya. 💗</p>
+   </div>
+   <div class="row"><button class="chip" id="l-skip">Tampilkan semua</button><button class="chip" id="l-again" hidden>Baca lagi</button><button class="chip" data-go="map">Kembali ke peta</button></div></article></div>
+</section>
+</main>
+
+<div class="lightbox" id="lb" hidden role="dialog" aria-modal="true" aria-label="Detail kartu foto"><div class="lb-box">
+ <div class="row between"><button class="btn lil" id="lb-back">← Kembali ke paket</button><button class="btn" id="lb-close" aria-label="Tutup kartu">✕</button></div>
+ <img id="lb-img" alt=""><p><b id="lb-num"></b><br><span id="lb-cap"></span></p>
+ <div class="row between"><button class="btn alt" id="lb-prev">← Foto sebelumnya</button><button class="btn alt" id="lb-next">Foto berikutnya →</button></div></div></div>
+<div class="cat" id="cat" hidden><p class="cat-say" id="cat-say" role="status" hidden></p><div class="row crow"><button class="chip" id="cat-fish" aria-label="Kasih ikan ke kucing">🐟</button><button class="cat-btn" id="cat-pet" aria-label="Elus kucing penjaga planet"><img class="kucing" id="cat-img" src="assets/gif/wish-sleepy.gif" alt="Kucing penjaga planet" width="110" height="104"></button></div></div>
+<div class="music" id="music" role="group" aria-label="Pemutar musik"><button id="m-prev" aria-label="Lagu sebelumnya">⏮</button><button id="m-play" aria-label="Putar musik" aria-pressed="false">▶</button><button id="m-next" aria-label="Lagu berikutnya">⏭</button><span id="m-title"></span><input id="m-vol" type="range" min="0" max="1" step=".05" value=".6" aria-label="Volume"><button id="sfx" aria-label="Efek suara pop" aria-pressed="true">🔔</button></div><audio id="song" preload="none"></audio>
+<div class="confetti" id="confetti" aria-hidden="true"></div>
+<script src="js/config.js"></script><script src="js/memories.js"></script><script src="js/interactions.js"></script><script src="js/music.js"></script><script src="js/booth.js"></script><script src="js/app.js"></script><script src="js/extras.js"></script><script src="js/cute.js"></script><script src="js/preflight.js"></script>
+</body></html>
